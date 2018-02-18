@@ -50,10 +50,10 @@ function reverseString(str) {
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
-function isPalindrome(str) {
-  const reveseStr = str.split('').reverse().join('')
-  return reveseStr === str
-}
+// function isPalindrome(str) {
+//   const reveseStr = str.split('').reverse().join('')
+//   return reveseStr === str
+// }
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -61,7 +61,11 @@ function isPalindrome(str) {
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {}
+function reverseInt(int) {
+  const reverseToString = int.toString().split('').reverse().join('')
+  return parseInt(reverseToString) * Math.sign() // To Change to integer and keep the sign (-)
+  
+}
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -86,6 +90,6 @@ function fizzBuzz() {}
 
 
 // Call Function
-const output = isPalindrome('madam');
+const output = reverseInt(123);
 
 console.log(output)
