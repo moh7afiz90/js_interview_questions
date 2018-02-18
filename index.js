@@ -72,13 +72,27 @@ function reverseString(str) {
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-// function capitalizeLetters(str) {
-//   const strToArry = str.toLowerCase().split(' ')
-//   for(let i = 0; i < strToArry.length; i++){
-//     strToArry[i] = strToArry[i].substring(0,1).toUpperCase() + strToArry[i].substring(1)
-//   }
-//   return strToArry.join(' ')
-// }
+
+function capitalizeLetters(str) {
+  // const strToArry = str.toLowerCase().split(' ')
+  // for(let i = 0; i < strToArry.length; i++){
+  //   strToArry[i] = strToArry[i].substring(0,1).toUpperCase() + strToArry[i].substring(1)
+  // }
+  // return strToArry.join(' ')
+  ///////////////////////////////
+  // BEST WAY
+  // return str
+  //   .toLowerCase()
+  //   .split(' ')
+  //   .map(word => word[0] .toUpperCase() + word.substr(1))
+  //   .join(' ')
+  ///////////////////////////////
+  // Regular Expression
+  // return str.replace(/\b[a-z]/gi, char => char.toUpperCase())
+}
+
+
+
 
 /////////////////////////////////////////////////////////////////////////
 
