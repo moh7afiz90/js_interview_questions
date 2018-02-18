@@ -61,18 +61,24 @@ function reverseString(str) {
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {
-  const reverseToString = int.toString().split('').reverse().join('')
-  return parseInt(reverseToString) * Math.sign() // To Change to integer and keep the sign (-)
+// function reverseInt(int) {
+//   const reverseToString = int.toString().split('').reverse().join('')
+//   return parseInt(reverseToString) * Math.sign() // To Change to integer and keep the sign (-)
   
-}
+// }
 
 /////////////////////////////////////////////////////////////////////////
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-function capitalizeLetters(str) {}
+// function capitalizeLetters(str) {
+//   const strToArry = str.toLowerCase().split(' ')
+//   for(let i = 0; i < strToArry.length; i++){
+//     strToArry[i] = strToArry[i].substring(0,1).toUpperCase() + strToArry[i].substring(1)
+//   }
+//   return strToArry.join(' ')
+// }
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -90,6 +96,6 @@ function fizzBuzz() {}
 
 
 // Call Function
-const output = reverseInt(123);
+const output = capitalizeLetters('i love our prophet');
 
 console.log(output)
